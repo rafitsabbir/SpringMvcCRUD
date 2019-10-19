@@ -37,7 +37,6 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	public List<User> listAllUsers() {
-		// TODO Auto-generated method stub
 		List<User> list = namedParameterJdbcTemplate.query(listallusers, getSqlParameterByModel(null), new UserMapper());
 		return null;
 	}
@@ -65,25 +64,21 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	public void addUser(User user) {
-		// TODO Auto-generated method stub
 		namedParameterJdbcTemplate.update(adduser, getSqlParameterByModel(user));
 
 	}
 
 	public void updateUser(User user) {
-		// TODO Auto-generated method stub
 		namedParameterJdbcTemplate.update(updateuser, getSqlParameterByModel(user));
 
 	}
 
 	public void deleteUser(int id) {
-		// TODO Auto-generated method stub
 		namedParameterJdbcTemplate.update(deleteuser, getSqlParameterByModel(new User(id)));
 
 	}
 
 	public User findUserbyId(int id) {
-		// TODO Auto-generated method stub
 		return namedParameterJdbcTemplate.queryForObject(finduserbyid, getSqlParameterByModel(new User(id)), new UserMapper());
 	}
 

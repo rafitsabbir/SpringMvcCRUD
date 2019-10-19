@@ -4,7 +4,7 @@ import java.util.List;
 
 import springmvccrud.model.User;
 
-public interface UserDao {
+public interface UserDao { 
 	
 	public List<User> listAllUsers();
 	

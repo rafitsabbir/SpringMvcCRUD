@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>User Form</title>
+<title>User Page</title>
 </head>
 <body>
 
