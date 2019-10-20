@@ -1,0 +1,10 @@
+springmvccrud\config\WebConfig.class
+springmvccrud\controller\UserController.class
+springmvccrud\daoimpl\UserDaoImpl.class
+springmvccrud\daoimpl\UserDaoImpl$UserMapper.class
+springmvccrud\model\User.class
+springmvccrud\service\UserService.class
+springmvccrud\serviceimpl\UserServiceImpl.class
+springmvccrud\config\WebInitializer.class
+springmvccrud\dao\UserDao.class
+springmvccrud\daoimpl\UserDaoImpl$1.class

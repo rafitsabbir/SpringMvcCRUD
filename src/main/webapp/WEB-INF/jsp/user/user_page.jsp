@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <!DOCTYPE html>
@@ -27,11 +27,11 @@
 		<td>${user.address } </td>
 		<td>
 			<spring:url value="/update/${user.id }" var="updateURL" />
-			<a href="updateURL">Update</a>			
+			<a href="${updateURL}">Update</a>			
 		</td>
 		<td>
 			<spring:url value="/delete/${user.id }" var="deleteURL" />
-			<a href="deleteURL">Delete</a>			
+			<a href="${deleteURL}">Delete</a>			
 		</td>
 	</tr>
 </c:forEach>

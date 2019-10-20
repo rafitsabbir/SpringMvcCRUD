@@ -38,7 +38,7 @@ public class UserDaoImpl implements UserDao {
 
 	public List<User> listAllUsers() {
 		List<User> list = namedParameterJdbcTemplate.query(listallusers, getSqlParameterByModel(null), new UserMapper());
-		return null;
+		return list;
 	}
 
 	private SqlParameterSource getSqlParameterByModel(User user) {

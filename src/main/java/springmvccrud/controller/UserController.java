@@ -14,7 +14,7 @@ import springmvccrud.model.User;
 import springmvccrud.service.UserService;
 
 @Controller
-@RequestMapping(value = "/user")
+@RequestMapping(value = "/")
 public class UserController {
 
 	@Autowired
@@ -26,7 +26,6 @@ public class UserController {
 
 		List<User> list = userservice.listAllUsers();
 		mv.addObject("listuser", list);
-
 		return mv;
 
 	}

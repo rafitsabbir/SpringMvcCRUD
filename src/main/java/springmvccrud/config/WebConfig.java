@@ -31,7 +31,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	@Bean
 	public DataSource getDataSource() throws NamingException {
 		JndiTemplate jnditemplate =  new JndiTemplate();
-		DataSource datasource = (DataSource) jnditemplate.lookup("java:comp/env/jdbc/springmvc");
+		DataSource datasource = (DataSource) jnditemplate.lookup("java:comp/env/jdbc/springmvccrud");
 		
 		return datasource;
 	}
