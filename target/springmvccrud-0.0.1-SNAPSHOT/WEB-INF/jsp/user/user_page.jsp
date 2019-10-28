@@ -9,7 +9,11 @@
 <title>User Page</title>
 </head>
 <body>
-<h1> List</h1>
+
+<spring:url value="/add" var="addURL" />
+<a href="${addURL}">Add User</a>
+
+<h1>User List</h1>
 <table width="100%" border="1">
 <tr>
 	<th>Id </th>
@@ -27,11 +31,11 @@
 		<td>${user.address } </td>
 		<td>
 			<spring:url value="/update/${user.id }" var="updateURL" />
-			<a href="updateURL">Update</a>			
+			<a href="${updateURL}">Update</a>			
 		</td>
 		<td>
 			<spring:url value="/delete/${user.id }" var="deleteURL" />
-			<a href="deleteURL">Delete</a>			
+			<a href="${deleteURL}">Delete</a>			
 		</td>
 	</tr>
 </c:forEach>

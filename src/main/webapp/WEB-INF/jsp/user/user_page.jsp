@@ -9,7 +9,11 @@
 <title>User Page</title>
 </head>
 <body>
-<h1> List</h1>
+
+<spring:url value="/add" var="addURL" />
+<a href="${addURL}">Add User</a>
+
+<h1>User List</h1>
 <table width="100%" border="1">
 <tr>
 	<th>Id </th>
